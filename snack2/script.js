@@ -35,6 +35,8 @@ const teams = [
 
 // Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
 // - Math.random()
+const randomNumber = () => Math.ceil(Math.random() * 10); 
+console.log(randomNumber());
 // - Aggiornare le proprietà degli oggetti
 
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.

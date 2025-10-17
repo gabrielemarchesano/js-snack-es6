@@ -50,3 +50,6 @@ for (let i = 0; i < bicycles.length; i++) {
 console.log(smallerIndex);
 // - Stampo la bici selezionata
 console.log(bicycles[smallerIndex]);
+
+const cycleElement = document.getElementById("light-cycle");
+cycleElement.innerHTML = `La bici ${bicycles[smallerIndex].name} pesa ${bicycles[smallerIndex].weight}kg`;

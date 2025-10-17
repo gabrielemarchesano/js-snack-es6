@@ -38,6 +38,16 @@ const teams = [
 const randomNumber = () => Math.ceil(Math.random() * 10); 
 console.log(randomNumber());
 // - Aggiornare le proprietà degli oggetti
+// - Scorro l'array per selezionare l'oggetto
+for(let i = 0; i < teams.length; i++){
+  //Salvo il singolo oggetto in una variabile
+  const team = teams[i];
+  // - Aggiorno la proprietà dei punti e dei falli
+  team.score = randomNumber();
+  team.fouls = randomNumber();
+}
+//Stampo l'array per controllare se i valori sono stati aggiornati
+console.log(teams);
 
 // Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 // - push
